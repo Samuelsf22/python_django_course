@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso 2023</title>
+</head>
+<body>
+    <h2>Lista de cursos 2023</h2>
+
+    {% for curso in cursos %}
+    <h4>{{curso.nombre}} - {{curso.docente}}</h4>
+    <h6>{{curso.descripcion}}</h6>
+    <br/>
+    {% endfor %}
+
+</body>
+</html>
